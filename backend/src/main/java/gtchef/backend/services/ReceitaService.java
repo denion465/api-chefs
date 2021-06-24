@@ -23,9 +23,9 @@ public class ReceitaService {
     return repository.findById(id);
   }
 
-  public Receita execute(Receita receita) {
+  public Receita execute(Receita r) {
 
-    return repository.save(receita);
+    return repository.save(r);
   }
 
   public void deleteById(Long id) {
@@ -33,8 +33,8 @@ public class ReceitaService {
     repository.deleteById(id);
   }
 
-  public Receita save(Receita receita) {
+  public Receita save(Receita r) {
 
-    return repository.save(receita);
+    return repository.save(r);
   }
 }

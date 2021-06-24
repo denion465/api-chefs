@@ -23,9 +23,9 @@ public class CategoriaService {
     return repository.findById(id);
   }
 
-  public Categoria execute(Categoria categoria) {
+  public Categoria save(Categoria c) {
 
-    return repository.save(categoria);
+    return repository.save(c);
   }
 
   public Long delete(Long id) {

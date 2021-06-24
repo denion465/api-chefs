@@ -28,9 +28,9 @@ public class ReceitaController {
   }
 
   @PostMapping("/receitas")
-  public Receita create(@RequestBody Receita receita) {
+  public Receita create(@RequestBody Receita r) {
 
-    return service.save(receita);
+    return service.save(r);
   }
 
   @DeleteMapping("/receitas/{id}")
